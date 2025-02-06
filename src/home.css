@@ -1,0 +1,32 @@
+h1 {
+    font-size: 2rem;
+    color: #fff; /* Ensuring headers are readable */
+}
+
+section {
+padding: 2rem;
+margin: 4%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+.title {
+    font-family: "Kumar One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fdcb6e; /* Tomato color for a cool look */
+}
+
+::selection {
+    background-color: #ff6347; /* Selection highight color */
+    color: #fdcb6e; /* Optional colour change of text that is being selected */
+  }
+
+.subtitle{
+    font-family: "Noto Serif Hentaigana", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff6347; /* Tomato color for a cool look */
+    color: #fdcb6e;
+}
