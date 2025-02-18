@@ -1,11 +1,12 @@
 h1 {
     font-size: 2rem;
-    color: #fff; /* Ensuring headers are readable */
+    color: #fff;
+    /* Ensuring headers are readable */
 }
 
 section {
-padding: 2rem;
-margin: 4%;
+    padding: 2rem;
+    margin: 4%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
@@ -15,18 +16,55 @@ margin: 4%;
     font-family: "Kumar One", serif;
     font-weight: 400;
     font-style: normal;
-    color: #fdcb6e; /* Tomato color for a cool look */
+    color: #fdcb6e;
+    /* Tomato color for a cool look */
 }
 
 ::selection {
-    background-color: #ff6347; /* Selection highight color */
-    color: #fdcb6e; /* Optional colour change of text that is being selected */
-  }
+    background-color: #ff6347;
+    /* Selection highight color */
+    color: #fdcb6e;
+    /* Optional colour change of text that is being selected */
+}
 
-.subtitle{
+.subtitle {
     font-family: "Noto Serif Hentaigana", serif;
     font-weight: 400;
     font-style: normal;
-    color: #ff6347; /* Tomato color for a cool look */
+    color: #ff6347;
+    /* Tomato color for a cool look */
     color: #fdcb6e;
+}
+
+/* 
+Underline animation */
+.underline-text {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.5em;
+    font-family: "Noto Serif Hentaigana", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fdcb6e; /* Playful yellow-orange */
+}
+
+.underline-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 10px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 20"><path d="M 0,10 C 30,0 70,20 100,10 S 180,20 220,10 S 300,20 340,10 S 380,20 400,10" stroke="%23fdcb6e" fill="transparent" stroke-width="5" shape-rendering="geometricPrecision"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left;
+    clip-path: inset(0 100% 0 0);  /* Initially hides the line */
+    animation: draw-underline 1s ease-in-out 2s forwards;
+}
+
+@keyframes draw-underline {
+    to {
+        clip-path: inset(0 0 0 0);  /* Reveals the line from left to right */
+    }
 }
