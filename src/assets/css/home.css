@@ -7,6 +7,9 @@ h1 {
 section {
     padding: 2rem;
     margin: 4%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
@@ -34,6 +37,7 @@ section {
     color: #ff6347;
     /* Tomato color for a cool look */
     color: #fdcb6e;
+    margin-bottom: 0;
 }
 
 /* 
@@ -47,6 +51,7 @@ Underline animation */
     font-style: normal;
     color: #fdcb6e; /* Playful yellow-orange */
 }
+
 
 .underline-text::after {
     content: "";
