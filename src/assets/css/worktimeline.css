@@ -1,0 +1,43 @@
+.timeline-container {
+    position: relative;
+    margin-left: 120px;
+    overflow: hidden;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 4px;
+    height: 0; /* Start with 0 height */
+    background-color: #fdcb6e;
+    z-index: 0;
+    transition: height 2s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth transition */
+}
+
+/* When the .in-view class is added, the line grows down */
+.timeline-container.in-view .timeline-line {
+    height: 300vh;
+}
+.timeline-container.in-view {
+    overflow: visible;
+}
+
+/* Section- education */
+
+section.container{
+    padding-top: 80px;
+    padding-left: 120px;
+}
+section h3.year{
+    color:#fdcb6e;
+}
+
+section p{
+    color:bisque;
+}
+
+section.container div.tile{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
